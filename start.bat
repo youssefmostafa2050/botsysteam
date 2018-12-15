@@ -1,2 +1,0 @@
-node botdiscord.js
-pause
