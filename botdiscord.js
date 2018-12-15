@@ -100,7 +100,8 @@ m.sendMessage(args)
  
  
  client.on('message' , function (message){
-      var token = 'توكن بوتك'; // التوكن هنا بس
+      var token = 'NTEyNjIzMTMwNzU0Mjg1NTY5.DvXwMQ.n6NHlOMirvtyCO5XNr49vbg9ljs
+';
       if(message.content === '!restart') {
 if(message.author.id !== '390636399340027906') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
           client.destroy();
