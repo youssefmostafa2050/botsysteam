@@ -85,8 +85,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('!bcall')){
- if (message.author.id !== 'ايديك') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === 'ايديك') return;
+ if (message.author.id !== '390636399340027906') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '390636399340027906') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -102,13 +102,13 @@ m.sendMessage(args)
  client.on('message' , function (message){
       var token = 'توكن بوتك'; // التوكن هنا بس
       if(message.content === '!restart') {
-if(message.author.id !== 'ايديك') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
+if(message.author.id !== '390636399340027906') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
           client.destroy();
-          client.login(token) // لا تغيرها
+          client.login(token) //
 var time = 7200000;
 client.setInterval(function() {
     client.destroy();
-    client.login(token) // لا تغيرها
+    client.login(token) //
   }, time);
 }
 })
@@ -456,7 +456,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "F5AmEh.bot" // غير هنا حط اسم البوت
+          text: "UnionBot" // غير هنا حط اسم البوت
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -749,7 +749,7 @@ var mentionned = message.mentions.members.first();
          if(!message.channel.guild) return;
                             let args = message.content.split(' ').slice(1).join(' ');
     
-    client.guilds.get("ايدي البوت").members.get("ايديك").sendMessage(message.author.tag+"\n Message : "+args)
+    client.guilds.get("512623130754285569").members.get("390636399340027906").sendMessage(message.author.tag+"\n Message : "+args)
     
                                                     let embed = new Discord.RichEmbed()
                                                     .setAuthor(message.author.username, message.author.avatarURL)
